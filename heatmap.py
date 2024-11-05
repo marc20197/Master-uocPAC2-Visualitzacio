@@ -9,10 +9,11 @@ heatmap_data = data.pivot_table(
     columns='Any', 
     values='Consum domèstic per càpita'
 )
-cmap = sns.light_palette("blue", as_cmap=True)
+
 plt.figure(figsize=(12, 8))  # Ajusta la mida de la figura segons sigui necessari
-sns.heatmap(heatmap_data, annot=False, linewidths=0.01, linecolor='white')
+sns.heatmap(heatmap_data, annot=False, linewidths=0.01, linecolor='white',cmap="coolwarm")
 plt.title('Consum domèstic per càpita per Any i Comarca')
 plt.xlabel('Any')
 plt.ylabel('Comarca')
+plt.savefig("consum_domestic_heatmap.png", dpi=300, bbox_inches='tight')
 plt.show()
