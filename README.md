@@ -4,3 +4,5 @@ FITXERS:
       on hi ha el codi que genera el heatmap
   -Fitxer Consum_d_aigua_a_Catalunya_per_comarques_20241104.csv:
       que conté les dades que es llegeixen en el fitxer heatmap.py
+  -Fitxer.png:
+      aquest és el gràfic que ens hauria de generar el codi
